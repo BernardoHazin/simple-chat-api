@@ -24,6 +24,7 @@ const knex = require('knex')({
   }
 })
 
+knex.migrate.rollback()
 knex.migrate.up()
 
 module.exports = knex

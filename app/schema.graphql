@@ -5,7 +5,7 @@ type Query {
 }
 
 type Mutation {
-  addUser(name: String): User!
+  enter(name: String): User!
   addMessage(message: String!): Message!
 }
 
