@@ -1,0 +1,36 @@
+type Query {
+  users: [User]!
+  messages: [Message]!
+  chats: [Chat]!
+}
+
+type Mutation {
+  addUser(name: String): User!
+  addMessage(message: String!): Message!
+}
+
+type Subscription {
+  userAdded: User!
+  messageAdded: Message!
+}
+
+type User {
+  id: Int!
+  name: String!
+  messages: [Message]
+}
+
+type Chat {
+  id: Int!
+  name: String!
+  admin: User!
+  is_public: Boolean!
+  messages: [Message]
+  users: [User]
+}
+
+type Message {
+  id: Int!
+  user: User!
+  message: String!
+}

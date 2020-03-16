@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BernardoHazin/simple-chat-api.git",
+  "author": "Hazin <bernardo.hazin@mesainc.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./app/server.js",
+    "start": "node ./app/server.js",
+    "knex": "knex"
+  },
+  "dependencies": {
+    "apollo-server": "^2.11.0",
+    "chalk": "^3.0.0",
+    "graphql": "^14.6.0",
+    "knex": "^0.20.11",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
